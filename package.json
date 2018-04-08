@@ -1,0 +1,32 @@
+{
+  "name": "pyraminx",
+  "version": "1.0.0",
+  "description": "Pyraminx is a project that uses concepts of Computing Graph and Geometry to create a pyraminx toy for browser using Three.js, WebGL and Canvas.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/evsoncustodio/pyraminx.git"
+  },
+  "keywords": [
+    "Pyraminx",
+    "Three.js",
+    "WebGL"
+  ],
+  "author": "evsoncustodio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/evsoncustodio/pyraminx/issues"
+  },
+  "homepage": "https://github.com/evsoncustodio/pyraminx#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "consign": "^0.1.6",
+    "express": "^4.16.3",
+    "serve-favicon": "^2.5.0",
+    "three": "^0.91.0"
+  }
+}
