@@ -20,18 +20,18 @@ function configureServer(port) {
     // Wi-Fi
     // eth0
     // wlan0
-    server.listen(process.env.PORT || port, '0.0.0.0', () => {
+    server.listen(process.env.PORT || port, () => {
         console.log('Server running on http://%s:%d', server.address().address, port);
     });
 }
 
-if (process.argv[1].endsWith('server.js')) {
-    if (process.argv.length == 2) {
-        configureServer(1024 + process.pid);
-    } else if (process.argv.length > 2) {
-        configureServer(process.argv[2]);
-    }
-}
+// if (process.argv[1].endsWith('server.js')) {
+//     if (process.argv.length == 2) {
+//         configureServer(1024 + process.pid);
+//     } else if (process.argv.length > 2) {
+//         configureServer(process.argv[2]);
+//     }
+// }
 
 configureServer(3000);
 
