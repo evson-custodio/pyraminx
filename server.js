@@ -20,7 +20,7 @@ function configureServer(port) {
     // Wi-Fi
     // eth0
     // wlan0
-    server.listen(port, getIpAddress('Loopback Pseudo-Interface 1'), () => {
+    server.listen(process.env.PORT || port, '0.0.0.0', () => {
         console.log('Server running on http://%s:%d', server.address().address, port);
     });
 }
@@ -32,5 +32,7 @@ if (process.argv[1].endsWith('server.js')) {
         configureServer(process.argv[2]);
     }
 }
+
+configureServer(3000);
 
 module.exports = configureServer;
